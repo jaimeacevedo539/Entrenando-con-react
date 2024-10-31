@@ -2,6 +2,14 @@
   text-align: center;
 }
 
+.rojo{
+  background-color: red;
+}
+
+.verde{
+  background-color: green;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
