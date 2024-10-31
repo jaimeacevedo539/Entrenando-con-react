@@ -6,11 +6,13 @@ import App from './App';
 import './componentes/destructuracion'
 import { PrimerComponente } from './componentes/PrimerComponente';
 import { Saludo,Title } from './componentes/Saludo';
+import Productos from './iteraciones/iterandoObjetos';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
    <React.StrictMode>
-    <App/>
+  //<App/>
+  <Productos/>
   </React.StrictMode>
  
 );
