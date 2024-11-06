@@ -3,14 +3,22 @@ import './App.css';
 import { Contador, PrimerComponente } from './componentes/PrimerComponente';
 import { Saludo, Title } from './componentes/Saludo';
 import { PortalModal } from './componentes/portals';
-import {  useState } from 'react';
+import { useState } from 'react';
+import Productos from './iteraciones/iterandoObjetos';
+import Imagenes from './iteraciones/iterandoComponentes';
+import Refs from './iteraciones/refs';
+import InputNoControlado from './iteraciones/inputNoControlado';
+import Input from './iteraciones/inputNoControlado';
+import InputControlado from './iteraciones/inputsControlados';
+import Person from './componentes/PersonMap';
+
 
 
 function App() {
 
   const [isVisible, setVisible] = useState(false);
-  
- 
+
+
 
   const mostrarPortal = () => setVisible(true);
   const cerrarPortal = () => setVisible(false);
@@ -26,6 +34,12 @@ function App() {
       <Contador />
       <Saludo saluda />
       <Title />
+      <Productos />
+      <Imagenes/>
+      <Refs/>
+      <Input/>
+      <InputControlado/>
+      <Person/>
 
     </div>
 

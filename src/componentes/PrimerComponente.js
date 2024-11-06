@@ -1,6 +1,6 @@
 import { useState } from "react"
 import React from 'react'
-//import { PortalModal } from './componentes/portals';
+
 
 
 export const PrimerComponente = () => {

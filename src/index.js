@@ -11,8 +11,8 @@ import Productos from './iteraciones/iterandoObjetos';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
    <React.StrictMode>
-  //<App/>
-  <Productos/>
+  <App/>
+ 
   </React.StrictMode>
  
 );

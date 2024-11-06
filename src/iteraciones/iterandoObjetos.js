@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+/*import React, { Component } from "react";
 
 class Productos extends Component{
     state = {
@@ -58,6 +58,63 @@ class Productos extends Component{
             </div>
         )
     }
+}
+
+export default Productos; 
+*/
+import React, { useState } from "react";
+
+const Productos = () => {
+
+    const [products] = useState([
+        {
+            id: 1,
+            name: 'camisa',
+            colors: ['#467367', '#05fd88'],
+            price: 20
+        },
+        {
+            id: 2,
+            name: 'pantalon',
+            colors: ['#D35EFF', '#9956E8'],
+            price: 40
+        },
+        {
+            id: 3,
+            name: 'pantaloneta',
+            colors: ['#B32542', '#FF6987'],
+            price: 50
+        }
+    ]);
+
+    return (
+        <div>
+            <h3>ITERANDO CON OBJETOS R</h3>
+            <div>
+                {products.map((product) => (
+                    <div key={product.id}>
+                        $ {product.price} - {product.name}
+                        <div>
+                            {product.colors.map((color, index) => (
+                                <span
+                                    key={index}
+                                    style={{
+                                        width: '13px',
+                                        height: '13px',
+                                        borderRadius: '0.1em',
+                                        border: '1px solid gray',
+                                        display: 'inline-block',
+                                        margin: '0.1em',
+                                        background: color
+                                    }}
+                                ></span>
+                            ))}
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
 }
 
 export default Productos;

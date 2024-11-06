@@ -9,7 +9,7 @@ export const Saludo = (props) => {
 
     return(
         <p>
-            upps, no hay saludo
+           <h1>upps, no hay saludo</h1> 
         </p>
     )
 }
