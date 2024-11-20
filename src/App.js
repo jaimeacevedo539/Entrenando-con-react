@@ -3,7 +3,7 @@ import './App.css';
 import { Contador, PrimerComponente } from './componentes/PrimerComponente';
 import { Saludo, Title } from './componentes/Saludo';
 import { PortalModal } from './componentes/portals';
-import { useState } from 'react';
+import { Component, useState } from 'react';
 import Productos from './iteraciones/iterandoObjetos';
 import Imagenes from './iteraciones/iterandoComponentes';
 import Refs from './iteraciones/refs';
@@ -11,6 +11,7 @@ import InputNoControlado from './iteraciones/inputNoControlado';
 import Input from './iteraciones/inputNoControlado';
 import InputControlado from './iteraciones/inputsControlados';
 import Person from './componentes/PersonMap';
+import ComunicacionConInstancia from './componentes/comunicacionConInstancia';
 
 
 
@@ -40,6 +41,8 @@ function App() {
       <Input/>
       <InputControlado/>
       <Person/>
+      <ComunicacionConInstancia/>
+
 
     </div>
 
